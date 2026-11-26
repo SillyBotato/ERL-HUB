@@ -1,4 +1,4 @@
-# ERL-HUB — Architecture and Design (Stage 1)
+# ERL-HUB — Architecture and Design (Stage 1)  
 
 ## 1. Problem framing
 
