@@ -1,0 +1,30 @@
+3
+D1
+Central Depot
+Sector A
+1
+D1
+n
+C1
+Ration kits
+1
+50
+10
+0.5
+2
+5
+1
+V1
+Truck-Alpha
+200
+180
+5000
+y
+4
+14
+V1
+50
+11
+12
+6
+0

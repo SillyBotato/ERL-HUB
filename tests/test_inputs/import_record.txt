@@ -1,0 +1,10 @@
+3
+D9
+Import Depot
+Sector Z
+1
+D9
+y
+MED9 Trauma-kits 2 40 7.5 0.3 4 SectorZ
+2
+0

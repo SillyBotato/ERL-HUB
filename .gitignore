@@ -1,0 +1,22 @@
+
+# Compiled files
+*.o
+*.exe
+*.obj
+*.dll
+*.so
+
+# Build directories
+build/
+bin/
+
+# Generated persistence and test files
+*.dat
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db

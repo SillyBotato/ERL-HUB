@@ -1,0 +1,163 @@
+
+  >>> ERL-HUB :: EMERGENCY RELIEF LOGISTICS HUB <<<
+  ============================================================
+  Post-earthquake multi-agency dispatch simulator (C++17)
+  Data file: data/erlhub.dat (use option 12 to restore a save)
+
+========== ERL-HUB MAIN MENU ==========
+  1. Add New Relief Cargo
+  2. View Available Inventory
+  3. Register Distribution Depot
+  4. Restock Existing Cargo
+  5. Register Transport Vehicle
+  6. View Registered Vehicles
+  7. Allocate Supplies to Vehicle
+  8. Dispatch Emergency Vehicle
+  9. View Emergency Priority Queue
+  10. View Dispatch History
+  11. Save Application Data
+  12. Load Previously Saved Data
+  13. Display Logistics Statistics
+  14. Refuel Vehicle
+  0. Exit
+=======================================
+  Enter choice:   Vehicle type:
+    1) GroundConvoy
+    2) AerialTransport
+    3) AmphibiousCraft
+    4) AmphibiousMedicalVehicle
+  Select [1-4]:   Vehicle ID:   Model / call sign:   Fuel capacity (L) (>= 1):   Current fuel (L) (>= 0):   Maximum payload (kg) (>= 1):   Mark vehicle operational (y/n):   Axles [2-12]:   => Registered GroundConvoy EXACT (Truck-Exact)
+
+========== ERL-HUB MAIN MENU ==========
+  1. Add New Relief Cargo
+  2. View Available Inventory
+  3. Register Distribution Depot
+  4. Restock Existing Cargo
+  5. Register Transport Vehicle
+  6. View Registered Vehicles
+  7. Allocate Supplies to Vehicle
+  8. Dispatch Emergency Vehicle
+  9. View Emergency Priority Queue
+  10. View Dispatch History
+  11. Save Application Data
+  12. Load Previously Saved Data
+  13. Display Logistics Statistics
+  14. Refuel Vehicle
+  0. Exit
+=======================================
+  Enter choice:   Vehicle ID:   Fuel quantity to add (L) (>= 0.01):     Requested: 50 L
+  => Vehicle EXACT refuel: requested 50.000000 L, actually added 50.000000 L, final fuel 200.000000 L. Saved.
+
+========== ERL-HUB MAIN MENU ==========
+  1. Add New Relief Cargo
+  2. View Available Inventory
+  3. Register Distribution Depot
+  4. Restock Existing Cargo
+  5. Register Transport Vehicle
+  6. View Registered Vehicles
+  7. Allocate Supplies to Vehicle
+  8. Dispatch Emergency Vehicle
+  9. View Emergency Priority Queue
+  10. View Dispatch History
+  11. Save Application Data
+  12. Load Previously Saved Data
+  13. Display Logistics Statistics
+  14. Refuel Vehicle
+  0. Exit
+=======================================
+  Enter choice:   Vehicle type:
+    1) GroundConvoy
+    2) AerialTransport
+    3) AmphibiousCraft
+    4) AmphibiousMedicalVehicle
+  Select [1-4]:   Vehicle ID:   Model / call sign:   Fuel capacity (L) (>= 1):   Current fuel (L) (>= 0):   Maximum payload (kg) (>= 1):   Mark vehicle operational (y/n):   Axles [2-12]:   => Registered GroundConvoy FULL (Truck-Full)
+
+========== ERL-HUB MAIN MENU ==========
+  1. Add New Relief Cargo
+  2. View Available Inventory
+  3. Register Distribution Depot
+  4. Restock Existing Cargo
+  5. Register Transport Vehicle
+  6. View Registered Vehicles
+  7. Allocate Supplies to Vehicle
+  8. Dispatch Emergency Vehicle
+  9. View Emergency Priority Queue
+  10. View Dispatch History
+  11. Save Application Data
+  12. Load Previously Saved Data
+  13. Display Logistics Statistics
+  14. Refuel Vehicle
+  0. Exit
+=======================================
+  Enter choice:   Vehicle ID:   Fuel quantity to add (L) (>= 0.01):     Requested: 25 L
+  => Vehicle FULL refuel: requested 25.000000 L, actually added 0.000000 L, final fuel 200.000000 L. Saved.
+
+========== ERL-HUB MAIN MENU ==========
+  1. Add New Relief Cargo
+  2. View Available Inventory
+  3. Register Distribution Depot
+  4. Restock Existing Cargo
+  5. Register Transport Vehicle
+  6. View Registered Vehicles
+  7. Allocate Supplies to Vehicle
+  8. Dispatch Emergency Vehicle
+  9. View Emergency Priority Queue
+  10. View Dispatch History
+  11. Save Application Data
+  12. Load Previously Saved Data
+  13. Display Logistics Statistics
+  14. Refuel Vehicle
+  0. Exit
+=======================================
+  Enter choice:   => Saved data restored successfully.
+
+========== ERL-HUB MAIN MENU ==========
+  1. Add New Relief Cargo
+  2. View Available Inventory
+  3. Register Distribution Depot
+  4. Restock Existing Cargo
+  5. Register Transport Vehicle
+  6. View Registered Vehicles
+  7. Allocate Supplies to Vehicle
+  8. Dispatch Emergency Vehicle
+  9. View Emergency Priority Queue
+  10. View Dispatch History
+  11. Save Application Data
+  12. Load Previously Saved Data
+  13. Display Logistics Statistics
+  14. Refuel Vehicle
+  0. Exit
+=======================================
+  Enter choice: 
+  >>> REGISTERED TRANSPORT FLEET <<<
+  ============================================================
+  Vehicle ID          Type                      Status        Fuel (now/cap)    Payload cap     Extras
+  ------------------------------------------------------------------------------------------------------------
+EXACT               GroundConvoy              Available     200.0       /200.0 L5000.0         kg axles=4
+FULL                GroundConvoy              Available     200.0       /200.0 L5000.0         kg axles=4
+
+  >>> RUNTIME POLYMORPHIC ROUTE EVALUATION <<<
+  ============================================================
+  Iterating std::vector<ReliefVehicle*> through base pointers:
+  [GroundConvoy] Route EXACT -> Field Hospital Delta via Clear corridor, 116.4 km [surface roads, 4 axles] | fuel estimate 20.94 L | feasible=yes
+  [GroundConvoy] Route FULL -> Field Hospital Delta via Clear corridor, 193.2 km [surface roads, 4 axles] | fuel estimate 34.77 L | feasible=yes
+
+========== ERL-HUB MAIN MENU ==========
+  1. Add New Relief Cargo
+  2. View Available Inventory
+  3. Register Distribution Depot
+  4. Restock Existing Cargo
+  5. Register Transport Vehicle
+  6. View Registered Vehicles
+  7. Allocate Supplies to Vehicle
+  8. Dispatch Emergency Vehicle
+  9. View Emergency Priority Queue
+  10. View Dispatch History
+  11. Save Application Data
+  12. Load Previously Saved Data
+  13. Display Logistics Statistics
+  14. Refuel Vehicle
+  0. Exit
+=======================================
+  Enter choice: 
+  ERL-HUB shutdown complete. Stay safe.

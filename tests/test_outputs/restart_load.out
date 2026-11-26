@@ -1,0 +1,163 @@
+
+  >>> ERL-HUB :: EMERGENCY RELIEF LOGISTICS HUB <<<
+  ============================================================
+  Post-earthquake multi-agency dispatch simulator (C++17)
+  Data file: data/erlhub.dat (use option 12 to restore a save)
+
+========== ERL-HUB MAIN MENU ==========
+  1. Add New Relief Cargo
+  2. View Available Inventory
+  3. Register Distribution Depot
+  4. Restock Existing Cargo
+  5. Register Transport Vehicle
+  6. View Registered Vehicles
+  7. Allocate Supplies to Vehicle
+  8. Dispatch Emergency Vehicle
+  9. View Emergency Priority Queue
+  10. View Dispatch History
+  11. Save Application Data
+  12. Load Previously Saved Data
+  13. Display Logistics Statistics
+  14. Refuel Vehicle
+  0. Exit
+=======================================
+  Enter choice:   => Saved data restored successfully.
+
+========== ERL-HUB MAIN MENU ==========
+  1. Add New Relief Cargo
+  2. View Available Inventory
+  3. Register Distribution Depot
+  4. Restock Existing Cargo
+  5. Register Transport Vehicle
+  6. View Registered Vehicles
+  7. Allocate Supplies to Vehicle
+  8. Dispatch Emergency Vehicle
+  9. View Emergency Priority Queue
+  10. View Dispatch History
+  11. Save Application Data
+  12. Load Previously Saved Data
+  13. Display Logistics Statistics
+  14. Refuel Vehicle
+  0. Exit
+=======================================
+  Enter choice: 
+  >>> AVAILABLE INVENTORY <<<
+  ============================================================
+
+  Depot D1 | Central Depot | Sector A | lines: 1
+
+  +-------------------+--------------------------------+------------------+--------+-------+-----------+
+  | Cargo ID          | Cargo name                     | Category         | Qty    | Prio  | Weight kg |
+  +-------------------+--------------------------------+------------------+--------+-------+-----------+
+  | C1                | Ration kits                    | Ration kits      |     80 |     2 |     800.0 |
+  +-------------------+--------------------------------+------------------+--------+-------+-----------+
+
+========== ERL-HUB MAIN MENU ==========
+  1. Add New Relief Cargo
+  2. View Available Inventory
+  3. Register Distribution Depot
+  4. Restock Existing Cargo
+  5. Register Transport Vehicle
+  6. View Registered Vehicles
+  7. Allocate Supplies to Vehicle
+  8. Dispatch Emergency Vehicle
+  9. View Emergency Priority Queue
+  10. View Dispatch History
+  11. Save Application Data
+  12. Load Previously Saved Data
+  13. Display Logistics Statistics
+  14. Refuel Vehicle
+  0. Exit
+=======================================
+  Enter choice: 
+  >>> LOGISTICS STATISTICS <<<
+  ============================================================
+  Total operational vehicles  : 1
+  Total dispatched tonnage    : 0.200000 tonnes
+  Total cargo dispatched      : 200.000000 kg
+  Pending emergency requests  : 0
+  Vehicle availability        : 0 / 1 available
+  Registered depots           : 1
+  Completed dispatches        : 1
+
+========== ERL-HUB MAIN MENU ==========
+  1. Add New Relief Cargo
+  2. View Available Inventory
+  3. Register Distribution Depot
+  4. Restock Existing Cargo
+  5. Register Transport Vehicle
+  6. View Registered Vehicles
+  7. Allocate Supplies to Vehicle
+  8. Dispatch Emergency Vehicle
+  9. View Emergency Priority Queue
+  10. View Dispatch History
+  11. Save Application Data
+  12. Load Previously Saved Data
+  13. Display Logistics Statistics
+  14. Refuel Vehicle
+  0. Exit
+=======================================
+  Enter choice: 
+  >>> DISPATCH HISTORY <<<
+  ============================================================
+  Record      Timestamp           Vehicle         Destination       Cargo                 Qty    Fuel L    
+  ----------------------------------------------------------------------------------------------------------
+  DSP-00006   2026-11-25 19:58:21 V1              Village North     Ration kits           20     22.1      
+
+  >>> MANIFEST / OPERATION AUDIT RECORDS <<<
+  ============================================================
+  AUD-00001 [REGISTER_DEPOT] D1 /  : Central Depot / Sector A (2026-11-25 19:58:21)
+  AUD-00002 [ADD_CARGO] D1 /  : C1 x100 (2026-11-25 19:58:21)
+  AUD-00003 [REGISTER_VEHICLE]  / V1 : GroundConvoy V1 (Truck-Alpha) (2026-11-25 19:58:21)
+  AUD-00005 [ALLOCATE] D1 / V1 : Emergency allocation 20 units of C1 for Village North, priority Critical (2026-11-25 19:58:21)
+  AUD-00007 [DISPATCH] D1 / V1 : DSP-00006 -> Village North (2026-11-25 19:58:21)
+  AUD-00008 [REFUEL]  / V1 : requested 10.000000 L, added 10.000000 L (2026-11-25 19:58:21)
+
+========== ERL-HUB MAIN MENU ==========
+  1. Add New Relief Cargo
+  2. View Available Inventory
+  3. Register Distribution Depot
+  4. Restock Existing Cargo
+  5. Register Transport Vehicle
+  6. View Registered Vehicles
+  7. Allocate Supplies to Vehicle
+  8. Dispatch Emergency Vehicle
+  9. View Emergency Priority Queue
+  10. View Dispatch History
+  11. Save Application Data
+  12. Load Previously Saved Data
+  13. Display Logistics Statistics
+  14. Refuel Vehicle
+  0. Exit
+=======================================
+  Enter choice: 
+  >>> REGISTERED TRANSPORT FLEET <<<
+  ============================================================
+  Vehicle ID          Type                      Status        Fuel (now/cap)    Payload cap     Extras
+  ------------------------------------------------------------------------------------------------------------
+V1                  GroundConvoy              OnMission     187.9       /200.0 L5000.0         kg axles=4
+
+  >>> RUNTIME POLYMORPHIC ROUTE EVALUATION <<<
+  ============================================================
+  Iterating std::vector<ReliefVehicle*> through base pointers:
+  [GroundConvoy] Route V1 -> Field Hospital Delta via Clear corridor, 50.1 km [surface roads, 4 axles] | fuel estimate 9.01 L | feasible=yes
+
+========== ERL-HUB MAIN MENU ==========
+  1. Add New Relief Cargo
+  2. View Available Inventory
+  3. Register Distribution Depot
+  4. Restock Existing Cargo
+  5. Register Transport Vehicle
+  6. View Registered Vehicles
+  7. Allocate Supplies to Vehicle
+  8. Dispatch Emergency Vehicle
+  9. View Emergency Priority Queue
+  10. View Dispatch History
+  11. Save Application Data
+  12. Load Previously Saved Data
+  13. Display Logistics Statistics
+  14. Refuel Vehicle
+  0. Exit
+=======================================
+  Enter choice: 
+  ERL-HUB shutdown complete. Stay safe.
